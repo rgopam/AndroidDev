@@ -59,7 +59,7 @@ fun UnitConverter(){
     var iExpanded by remember { mutableStateOf(false) }
     var oExpanded by remember { mutableStateOf(false) }
     val conversionFactor = remember { mutableStateOf(0.01) }
-    val oconversionFactor = remember { mutableStateOf(0.01) }
+    val oconversionFactor = remember { mutableStateOf(0.01) }//commit
 fun convertFunction(){
     val inputValueDouble = inputValue.toDoubleOrNull() ?: 0.0
     val result = (inputValueDouble * conversionFactor.value ).roundToInt()
